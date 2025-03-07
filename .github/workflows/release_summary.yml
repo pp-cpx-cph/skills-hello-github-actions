@@ -1,1 +1,7 @@
+name: Create Release summary
+on:
+  release:
+    types: [released]
 
+jobs:
+  

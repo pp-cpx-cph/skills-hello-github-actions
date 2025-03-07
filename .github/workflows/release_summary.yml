@@ -4,4 +4,10 @@ on:
     types: [released]
 
 jobs:
-  
+  build:
+      name: Summarize release notes
+      runs-on: ubuntu-latest
+      steps:
+        - name: Get notes
+          run: |
+            echo "release-notes: ${{ github.event.release.body }}"
